@@ -1,0 +1,41 @@
+// fonts
+$font-primary: "Work Sans", sans-serif;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// font-size
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$font-size-lg: 56px;
+$line-height-lg: 1.1785;
+
+$font-size-md: 18px;
+$line-height-md: 1.1667;
+
+$font-size-base-mobile: 14px;
+$line-height-base-mobile: 1.5;
+
+$font-size-lg-mobile: 32px;
+$line-height-lg-mobile: 1.1875;
+
+$font-size-md-mobile: 16px;
+$line-height-md-mobile: 1.1875; 
+
+// colors
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-purple-950: #301534;
+$color-purple-600: #8B6990;
+$color-purple-100: #F8EEFF;
+$color-violet-600: #AD28EB;
+
+// spacing
+$spacing-base: 8px;
+
+$spacing-100: $spacing-base;     // 8px
+$spacing-200: $spacing-base * 2; // 16px
+$spacing-300: $spacing-base * 3; // 24px
+$spacing-400: $spacing-base * 4; // 32px
+$spacing-500: $spacing-base * 5; // 40px

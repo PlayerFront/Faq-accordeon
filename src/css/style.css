@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+button, input, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.1875;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+    line-height: 1.1785;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 56px;
+    line-height: 1.1785;
+  }
+}
+
+span {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  span {
+    font-size: 18px;
+    line-height: 1.1667;
+  }
+}
+
+.faq {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 327px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+@media (min-width: 768px) {
+  .faq {
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 520px;
+  }
+}
+@media (min-width: 1024px) {
+  .faq {
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 520px;
+  }
+}
+.faq__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+.faq__header h1 {
+  line-height: 0;
+}
+.faq__header-logo {
+  height: 30px;
+  width: 30px;
+}
+@media (min-width: 768px) {
+  .faq__header-logo {
+    height: 35px;
+    width: 35px;
+  }
+}
+.faq__content .faq-item {
+  border-bottom: 1px solid rgb(248, 238, 255);
+}
+.faq__content .faq-item .faq-question {
+  cursor: pointer;
+  width: 100%;
+  padding: 24px 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+}
+.faq__content .faq-item .faq-toggle-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 24px;
+}
+.faq__content .faq-item[data-faq-item].is-active .faq-toggle-icon {
+  transform: rotate(180deg);
+  content: url("../assets/images/icon-minus.svg");
+}
+.faq__content .faq-item:last-of-type {
+  border: none;
+}
+.faq__content .faq-item:last-of-type .faq-question {
+  padding: 24px 0 0 0;
+}
+
+[data-faq-answer] {
+  display: none;
+  padding: 0 0 24px 0;
+  color: #8B6990;
+}
+[data-faq-answer].is-active {
+  display: block;
+}
+
+[data-faq-item]:last-of-type [data-faq-answer] {
+  padding-top: 24px;
+}
+
+.faq-container {
+  background-color: #F8EEFF;
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 768px) {
+  .faq-container {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
+}
+@media (min-width: 1024px) {
+  .faq-container {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
+}
+@media (min-width: 1440px) {
+  .faq-container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  }
+  .faq-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100%;
+    background-color: #F8EEFF;
+    z-index: -1;
+  }
+}

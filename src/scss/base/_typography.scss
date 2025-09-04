@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-base-mobile;
+    line-height: $line-height-base-mobile;
+
+    @media (min-width: 768px) {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+    }
+}
+
+h1 {
+    font-size: $font-size-lg-mobile;
+    line-height: $line-height-lg-mobile;
+    font-weight: $font-weight-bold;
+
+    @media (min-width: 768px) {
+        font-size: $font-size-lg;
+        line-height: $line-height-lg;
+    }
+    @media (min-width: 1024px) {
+        font-size: $font-size-lg;
+        line-height: $line-height-lg;
+    }
+}
+span {
+    font-family: $font-primary;
+    font-size: $font-size-md-mobile;
+    font-weight: $font-weight-semibold;
+
+        @media (min-width: 768px) {
+        font-size: $font-size-md;
+        line-height: $line-height-md;
+    }
+}
