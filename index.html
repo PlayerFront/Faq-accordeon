@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ accordeon | Frontend Mentor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
+
+<body>
+    <main class="faq-container">
+        <article class="faq">
+            <header class="faq__header">
+                <img class="faq__header-logo" src="assets/images/icon-star.svg" alt="">
+                <h1>FAQs</h1>
+            </header>
+            <section class="faq__content">
+                <!-- Question 1 -->
+                <div class="faq-item" data-faq-item>
+                    <button class="faq-question" data-faq-trigger aria-expanded="false">
+                        <span>What is Frontend Mentor, and how will it help me?</span>
+                        <img class="faq-toggle-icon" src="assets/images/icon-plus.svg" alt="" data-faq-icon>
+                    </button>
+                    <div class="faq-answer" data-faq-answer>
+                        <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend
+                            coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and
+                            ideal for portfolio building.</p>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="faq-item" data-faq-item>
+                    <button class="faq-question" data-faq-trigger>
+                        <span>Is Frontend Mentor free?</span>
+                        <img class="faq-toggle-icon" src="assets/images/icon-plus.svg" alt="" data-faq-icon>
+                    </button>
+                    <div class="faq-answer" data-faq-answer>
+                        <p>The majority of our challenges are free, yes. We do have some that are premium and require a
+                            Pro subscription to access. It will say on each challenge whether they are free or premium,
+                            so it's easy to tell the difference.</p>
+                    </div>
+                </div>
+                <!-- question 3 -->
+                <div class="faq-item" data-faq-item>
+                    <button class="faq-question" data-faq-trigger>
+                        <span>Can I use Frontend Mentor projects in my portfolio?</span>
+                        <img class="faq-toggle-icon" src="assets/images/icon-plus.svg" alt="" data-faq-icon>
+                    </button>
+                    <div class="faq-answer" data-faq-answer>
+                        <p>Definitely! Please do feel free to use whatever you build in your portfolio. Helping
+                            developers add professional-looking projects to their portfolio was one of the reasons we
+                            created this platform!</p>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="faq-item" data-faq-item>
+                    <button class="faq-question" data-faq-trigger>
+                        <span>How can I get help if I'm stuck on a challenge?</span>
+                        <img class="faq-toggle-icon" src="assets/images/icon-plus.svg" alt="" data-faq-icon>
+                    </button>
+                    <div class="faq-answer" data-faq-answer>
+                        <p>The best (and quickest) way to get help on a challenge is in our Discord server. There are
+                            thousands of other developers in there, so it's a great place to ask questions. We even have
+                            a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord
+                            server here.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/components/faq.js"></script>
+</body>
+</html>
