@@ -9,7 +9,7 @@ https://playerfront.github.io/Faq-accordeon/
 
 ## 📸 Preview
 
-![Project Preview](/docs/design/faq-accordion-figma/preview.jpg) <!-- Добавьте скриншот -->
+![Project Preview](/docs/design/faq-accordion-figma/preview.jpg) 
 
 ## 🛠 Built With
 
